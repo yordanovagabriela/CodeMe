@@ -1,5 +1,6 @@
 #include<iostream>
 #include<cmath>
+#include<iomanip>
 using namespace std;
 
 float fill_tetrahedron(int num) {
@@ -8,7 +9,6 @@ float fill_tetrahedron(int num) {
 	return volume;
 }
 int main() {
-	int num = 100;
-	cout << fill_tetrahedron(100) << endl;
+	cout << fixed << setprecision(2) << fill_tetrahedron(100) << endl;
 	return 0;
 }
