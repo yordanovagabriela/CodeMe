@@ -6,10 +6,8 @@ alphabet={0:'a',1:'b',2:'c',3:'d',
 	20:'u',21:'v',22:'w',23:'x',
 	24:'y',25:'z'	
 }
-
-def ceaser(string,n):
-    	string.lower()
-	new_list=list(string)
+def caesar_encrypt(str,n):
+	new_list=list(str)
 	last_list=[]
 	for i in new_list:
 		for m in alphabet:
@@ -26,5 +24,7 @@ def ceaser(string,n):
 						last_list.append(alphabet[n+m])
 					else:
 						last_list.append(alphabet[n+m].upper())
+		if i.isalpha()==False:
+			last_list.append(i)
 	print ("".join(last_list))
-ceaser("aaa",7)
+caesar_encrypt("This is a secret message!",34)
