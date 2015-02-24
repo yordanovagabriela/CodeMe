@@ -8,6 +8,5 @@ def tetrahedron_filled(tetrahedrons, water):
 			br=br+1
 			water=water-volume
 		i=i+1
-	print (br)
-
-print (tetrahedron_filled([100000],10))
+	return (br)
+print (tetrahedron_filled([40,30,10],10))
